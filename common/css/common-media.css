@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*mobile*/
+@media screen and (max-width: 639px) {
+  .header_pc,
+  .footer {
+    display: none;
+  }
+}
+
+/*tablet*/
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .header_pc,
+  .footer {
+    display: none;
+  }
+}
+
+/*pc*/
+@media screen and (min-width: 1024px) {
+  .header_mt,
+  .mt_nav,
+  .footer_mt {
+    display: none;
+  }
+}
