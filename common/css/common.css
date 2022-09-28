@@ -84,34 +84,27 @@ section {
 /*------header_mt------*/
 .header_mt {
   width: 100%;
-  position: absolute;
+  height: 100px;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   display: flex;
-  justify-self: center;
-  align-self: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .mt_menubar {
   position: absolute;
   top: 20px;
   left: 20px;
-  cursor: pointer;
 }
-.header_mt .mt_logo {
-  margin: 10px auto 0;
-  text-align: center;
-}
-.header_mt .mt_logo img {
-  width: 150px;
+.mt_logo {
 }
 .mt_search {
   position: absolute;
   top: 20px;
   right: 20px;
-  cursor: pointer;
 }
-
 .mt_nav {
   width: 50%;
   height: 100%;
@@ -179,6 +172,7 @@ section {
   padding-left: 20px;
 }
 
+/*------footer------*/
 .footer {
   position: relative;
   position: absolute;
@@ -305,20 +299,20 @@ section {
   background: #e4e4e4;
 }
 .fmt_1-1 {
-  width: 470px;
+  width: 390px;
   margin: 0 auto;
   background: pink;
 }
 .fmt_1-1 li {
   float: left;
-  margin-right: 18px;
+  margin-right: 12px;
   line-height: 70px;
 }
 .fmt_1-1 li:last-child {
   margin-right: 0;
 }
 .fmt_1-1 li a {
-  font-size: 14px;
+  font-size: 12px;
   color: #00275a;
   font-weight: bold;
 }
@@ -330,14 +324,16 @@ section {
 }
 
 .fmt_2 .fmt2-1 {
-  margin-top: 20px;
+  width: 93%;
+  margin: 20px auto 0;
 }
 .fmt_2 .fmt2-1 h3 {
   text-align: center;
   margin-bottom: 10px;
 }
 .fmt_2 .fmt2-2 {
-  margin-top: 20px;
+  width: 93%;
+  margin: 20px auto 0;
 }
 .fmt_2 .fmt2-2 h3 {
   text-align: center;
@@ -346,7 +342,7 @@ section {
 
 .fmt_sns {
   width: 220px;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .fmt_sns li {
   float: left;

@@ -21,7 +21,6 @@
 
     <script src="mainjs/jquery-1.10.2.min.js"></script>
     <script src="mainjs/jquery.scrollTo.min.js"></script>
-    <script src="mainjs/jssor.slider-27.5.0.min.js"></script>
 
     <!--mousewheel-->
     <script src="mainjs/jquery-ui.min.js"></script>
@@ -33,7 +32,7 @@
     <script src="mainjs/main.js"></script>
   </head>
   <body>
-    <div class="id">
+    <div id="wrap">
       <header class="header">
         <div class="header_pc">
           <div class="header_logo">
@@ -77,42 +76,44 @@
           <!--hedaer_login/-->
         </div>
         <!--hedaer_pc/-->
+
+        <div class="header_mt">
+          <img
+            src="common/images/menubar.png"
+            alt="menubar"
+            class="mt_menubar"
+          />
+          <img src="common/images/logo.png" alt="logo" class="mt_logo" />
+          <img
+            src="common/images/search.png"
+            alt="검색버튼"
+            class="mt_search"
+          />
+          <!--hedaer_logo/-->
+
+          <div class="mt_nav">
+            <p class="nav_close">
+              <img src="common/images/ic_menu-x.png" alt="닫기버튼" />
+            </p>
+            <ul class="gnb_mt">
+              <li><a href="#">MEN</a></li>
+              <li><a href="#">WOMEN</a></li>
+              <li><a href="#">UNISEX</a></li>
+              <li><a href="#">KID’S</a></li>
+              <li><a href="#">ACCESSORIES</a></li>
+              <li class="mt_sale"><a href="#">SALE</a></li>
+            </ul>
+
+            <ul class="gnb2">
+              <li><a href="/login_join/login.html">Login</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">Shop in KR</a></li>
+            </ul>
+          </div>
+        </div>
       </header>
       <!--header/-->
-
-      <div class="header_mt">
-        <p class="mt_menubar">
-          <img src="common/images/menubar.png" alt="menubar" />
-        </p>
-        <div class="mt_logo">
-          <img src="common/images/logo.png" alt="logo" />
-        </div>
-        <p class="mt_search">
-          <img src="common/images/search.png" alt="검색버튼" />
-        </p>
-        <!--hedaer_logo/-->
-      </div>
-
-      <div class="mt_nav">
-        <p class="nav_close">
-          <img src="common/images/ic_menu-x.png" alt="닫기버튼" />
-        </p>
-        <ul class="gnb_mt">
-          <li><a href="#">MEN</a></li>
-          <li><a href="#">WOMEN</a></li>
-          <li><a href="#">UNISEX</a></li>
-          <li><a href="#">KID’S</a></li>
-          <li><a href="#">ACCESSORIES</a></li>
-          <li class="mt_sale"><a href="#">SALE</a></li>
-        </ul>
-
-        <ul class="gnb2">
-          <li><a href="/login_join/login.html">Login</a></li>
-          <li><a href="#">문의하기</a></li>
-          <li><a href="#">마이페이지</a></li>
-          <li><a href="#">Shop in KR</a></li>
-        </ul>
-      </div>
 
       <section class="visual">
         <div class="circle">
@@ -130,6 +131,7 @@
         </p>
       </section>
       <!--visual/-->
+
       <section class="page1">
         <p class="model">
           <img src="images/model.png" alt="모델사진" />
